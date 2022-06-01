@@ -1,0 +1,41 @@
+/* SET UP */
+* {
+  box-sizing: border-box;
+
+  border: 1px solid black;
+  padding: 2px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* STRUCTURE */
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+  width: 100%;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.divs-container {
+
+    width: 700px;
+    height: 700px;
+    display: grid;
+    /* grid-template-columns: repeat(10,70px); */
+    
+    
+  
+}
