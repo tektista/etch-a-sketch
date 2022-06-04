@@ -1,15 +1,19 @@
 /* SET UP */
-* {
+@import "meyer-reset.css";
+
+* > div {
   box-sizing: border-box;
 
   border: 1px solid black;
-  padding: 2px;
+  
 }
 
 body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+
+
 }
 
 /* STRUCTURE */
@@ -30,12 +34,9 @@ main {
 }
 
 .divs-container {
+  width: 700px;
+  height: 700px;
+  display: grid;
 
-    width: 700px;
-    height: 700px;
-    display: grid;
-    /* grid-template-columns: repeat(10,70px); */
-    
-    
-  
+  /* grid-template-columns: repeat(10,70px); */
 }
