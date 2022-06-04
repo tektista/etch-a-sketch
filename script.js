@@ -24,18 +24,12 @@ for (let i = 1; i < area + 1; i++) {
   divsContainer.appendChild(div);
 }
 
-const divsContainer1 =
-  document.getElementsByClassName("divs-container").childNodes;
-  
+// get all children of .divs-container
+const divsContainer1 = document.querySelector(".divs-container").childNodes;
 
-
-  console.log(divsContainer1);
-
-
-  divsContainer1.forEach((element) => {
-  // and for each one we add a 'click' listener
+divsContainer1.forEach((element) => {
   element.addEventListener("mouseover", function () {
-    alert(element.class);
+    element.setAttribute("style", "background: red;");
   });
 });
 
